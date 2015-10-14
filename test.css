@@ -1,0 +1,54 @@
+/* Layout
+   ========================================================================== */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font: 130%/1.5 "Century", "Century Gothic", sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #bbb;
+  color: #111;
+}
+
+.container {
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  max-width: 34rem;
+  overflow-x: hidden;
+  width: 99%;
+}
+
+#couverture {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  text-transform: uppercase;
+}
+
+h1.titre {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: .67rem 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
