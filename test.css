@@ -8,29 +8,33 @@
 }
 
 html {
-  font: 130%/1.5 "Century", "Century Gothic", sans-serif;
+  font: 83%/1.25 "Century", "Century Gothic", sans-serif;
   font-weight: 400;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background-color: #bbb;
+  background-color: #fff;
   color: #111;
 }
 
 .container {
   background-color: #fff;
   margin: 0 auto;
-  padding: 2rem 4rem;
-  max-width: 34rem;
+  padding: 0;
+  max-width: 28rem;
   overflow-x: hidden;
-  width: 99%;
+  width: 100%;
 }
 
 #couverture {
   text-align: center;
 }
+
+
+/* Typography
+   ========================================================================== */
 
 h1 {
   font-size: 1.5rem;
@@ -39,7 +43,7 @@ h1 {
 }
 
 h1.titre {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h2 {
@@ -51,4 +55,39 @@ h2 {
 h3 {
   font-size: 1rem;
   text-transform: uppercase;
+}
+
+
+/* Smartphone (recents)
+   ========================================================================== */
+
+@media (min-width: 23rem) {
+  html { font: 100%/1.5 "Century", "Century Gothic", sans-serif; }
+ .container {
+    padding: 1rem .1rem;
+  }
+}
+
+
+/* Smartphone (landscape)
+   ========================================================================== */
+
+@media (min-width: 28rem) {
+  body { background-color: #ddd; }
+ .container {
+    padding: 1rem 1.5rem;
+    max-width: 34rem;
+    width: 99%
+  }
+}
+
+/* Tablet & desktop
+   ========================================================================== */
+
+@media (min-width: 48rem) {
+  html { font: 130%/1.5 "Century", "Century Gothic", sans-serif; }
+ .container {
+    padding: 2rem 4rem;
+  }
+  h1.titre { font-size: 3rem; }
 }
