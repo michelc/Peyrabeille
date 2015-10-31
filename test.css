@@ -39,11 +39,17 @@ body {
 h1 {
   font-size: 1.5rem;
   margin: 3rem 0;
-  padding-top: 3rem;
+  padding-top: 5rem;
+  page-break-before: always;
   text-align: center;
   text-transform: uppercase;
 }
-#couverture h1 { margin: 1.5rem 0; padding-top: 0 }
+#couverture h1 {
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  padding-top: 0;
+  page-break-before: avoid;
+}
 
 h1.titre {
   font-size: 2.5rem;
@@ -62,7 +68,7 @@ h3 {
 }
 
 p {
-  margin: .5rem 0;
+  margin: .25rem 0;
   text-align: justify;
   text-indent: 1rem;
 }
@@ -105,6 +111,7 @@ span.np { display: none; }
   }
 }
 
+
 /* Tablet & desktop
    ========================================================================== */
 
@@ -114,4 +121,19 @@ span.np { display: none; }
     padding: 2rem 4rem;
   }
   h1.titre { font-size: 3rem; }
+}
+
+
+/* Imprimante
+   ========================================================================== */
+
+@media print {
+  @page { margin: 5.5rem 0; }
+  html { font: 130%/1.5 "Century", "Century Gothic", sans-serif; }
+ .container {
+    padding: 2rem 4rem;
+  }
+  h1.titre { font-size: 3rem; }
+  body { background-color: #fff; }
+  #couverture h1 { padding-top: 0; }
 }
