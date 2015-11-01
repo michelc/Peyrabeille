@@ -8,7 +8,7 @@
 }
 
 html {
-  font: 83%/1.25 "Century", "Century Gothic", sans-serif;
+  font: 95%/1.5 "Century", "Century Gothic", sans-serif;
   font-weight: 400;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -22,7 +22,7 @@ body {
 .container {
   background-color: #fff;
   margin: 0 auto;
-  padding: 0;
+  padding: 1rem;
   max-width: 28rem;
   overflow-x: hidden;
   width: 100%;
@@ -72,7 +72,11 @@ p {
   text-align: justify;
   text-indent: 1rem;
 }
-#couverture p { text-align: center; text-indent: 0; }
+#couverture p {
+  font-size: .85rem;
+  text-align: center;
+  text-indent: 0;
+}
 
 span {
   font-variant: small-caps;
@@ -92,9 +96,25 @@ span.np { display: none; }
    ========================================================================== */
 
 @media (min-width: 23rem) {
-  html { font: 100%/1.5 "Century", "Century Gothic", sans-serif; }
+  html { font: 105%/1.5 "Century", "Century Gothic", sans-serif; }
  .container {
-    padding: 1rem .1rem;
+    padding: 1.5rem;
+  }
+}
+
+
+/* Smartphone (portraits)
+   ========================================================================== */
+
+@media (max-width: 27.9rem) {
+  /* https://justmarkup.com/log/2015/07/31/dealing-with-long-words-in-css/ */
+  p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
   }
 }
 
@@ -109,6 +129,7 @@ span.np { display: none; }
     max-width: 34rem;
     width: 99%
   }
+  #couverture p { font-size: 1rem; }
 }
 
 
