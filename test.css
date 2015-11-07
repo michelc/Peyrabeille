@@ -30,6 +30,7 @@ body {
 
 #couverture {
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 
@@ -87,10 +88,23 @@ hr {
 }
 
 
-/* Numérotation d'origine
+/* Numérotation d'origine (en haut de page)
    ========================================================================== */
-span.np { display: none; }
-
+a.p { display: none; }
+@media (min-width: 48rem) {
+  a.p {
+      border-top: 1px dotted #ddd;
+      color: #ddd;
+      display: block;
+      left: 50%;
+      margin-left: -17rem;
+      position: absolute;
+      text-align: left;
+      text-decoration: none;
+      text-indent: .1rem;
+      width: 34rem;
+  }
+}
 
 /* Smartphone (recents)
    ========================================================================== */
