@@ -90,20 +90,16 @@ hr {
 
 /* Numérotation d'origine (en haut de page)
    ========================================================================== */
-a.p { display: none; }
-@media (min-width: 48rem) {
-  a.p {
-      border-top: 1px dotted #ddd;
-      color: #ddd;
-      display: block;
-      left: 50%;
-      margin-left: -17rem;
-      position: absolute;
-      text-align: left;
-      text-decoration: none;
-      text-indent: .1rem;
-      width: 34rem;
-  }
+a.p {
+  border-top: 1px solid #ddd;
+  color: #ccc;
+  display: block;
+  left: 0;
+  position: absolute;
+  text-align: left;
+  text-decoration: none;
+  text-indent: .1rem;
+  width: 100%;
 }
 
 /* Smartphone (recents)
@@ -156,6 +152,11 @@ a.p { display: none; }
     padding: 2rem 4rem;
   }
   h1.titre { font-size: 3rem; }
+  a.p {
+    left: 50%;
+    margin-left: -17rem;
+    width: 34rem;
+  }
 }
 
 
