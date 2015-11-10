@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="test.css">
   </head>
 
-  <body><div class="container">
+  <body>
+
+  <div class="container">
 
     <div id="couverture">
 
@@ -49,7 +51,7 @@
 
     </div>
 
-    <a class="p" id="p5">5</a>
+    <a class="p">5</a>
 
     <h1>Le Coupe-Gorge</h1>
 
@@ -79,7 +81,7 @@
       Les faits se déroulant dans leur ordre chronologique
       et tels qu’ils ont été recueillis dans les dépositions
       des témoins appelés au procès criminel qui mit
-      <a class="p" id="p6">6</a>
+      <a class="p">6</a>
       fin à cette lugubre série de crimes, suffisent à imprimer
       au récit cet intérêt à la fois poignant et terrible
       que les romanciers recherchent et que quelques-uns
@@ -117,7 +119,7 @@
       et les dramaturges avaient peut-être négligés de
       consulter.
     </p>
-    <a class="p" id="p7">7</a>
+    <a class="p">7</a>
     <p>
       Il est vrai que la fantaisie littéraire est quelquefois
       gênée par ces données plus exactes de l’histoire
@@ -160,7 +162,7 @@
       En les remerciant très cordialement de leur précieux
       concours pour cette mise en œuvre, comme
       pour la recherche des détails peu connus, nous ne
-      <a class="p" id="p8">8</a>
+      <a class="p">8</a>
       faisons que nous acquitter d’un devoir facile de
       reconnaissance.
     </p>
@@ -201,7 +203,7 @@
       s’échapper de cette antre infernal où elles n’avaient vu
       que mort et carnage&nbsp;?
     </p>
-    <a class="p" id="p9">9</a>
+    <a class="p">9</a>
     <p>
       C’est ce que nous espérons bien éclaircir, grâce
       aux documents que pourrons nous fournir les recherches
@@ -241,7 +243,7 @@
       Toutefois, l’aubergiste de Peyrabeille, Pierre Martin
       dit Blanc, tient, par sa naissance au moins, à
       une époque très voisine de celle où les crimes de
-      <a class="p" id="p10">10</a>
+      <a class="p">10</a>
       Rang-Taloup eurent leur dénouement sur le gibet,
       car il naquit en 1783.
     </p>
@@ -285,7 +287,7 @@
       peu habitée, étaient forcément conduit à faire une
       halte plus ou moins prolongée dans l’auberge fatale.
     </p>
-    <a class="p" id="p11">11</a>
+    <a class="p">11</a>
     <p>
       Mais il faut bien le dire, tous n’étaient pas traités
       d’une façon également cruelle et inhospitalière.
@@ -327,7 +329,7 @@
     </p>
     <p>
       D’autres hommes d’affaires et des magistrats qui
-      <a class="p" id="p12">12</a>
+      <a class="p">12</a>
       avaient été également conduits vers la terrible
       auberge par les hasards ou les nécessités de leur
       profession, ont rendu le même témoignage.
@@ -366,7 +368,7 @@
     </p>
     <p>
       Le jeune substitut du procureur du Roi que nous
-      <a class="p" id="p13">13</a>
+      <a class="p">13</a>
       venons de nommer et qui joua un rôle des plus en
       relief dans les travaux de l’information contre les
       crimes de Peyrabeille, est mort il y a quelques années
@@ -405,7 +407,7 @@
       On comprend donc qu’entre les récits du pauvre
       Chaze, les vagues rumeurs qui se répandaient dans
       la contrée, et l’opinion malheureusement trop
-      <a class="p" id="p14">14</a>
+      <a class="p">14</a>
       favorable que partageaient beaucoup de personnes
       notables du pays sur les aubergistes de Peyrabeille, la
       justice ait pu longtemps hésiter ou s’égarer.
@@ -415,6 +417,17 @@
       d’entrer dans le vif du récit.
     </p>
 
-  </div></body>
+  </div>
+
+<script>
+var pages = document.querySelectorAll("a.p");
+[].forEach.call(pages, function (page) {
+  var id = "p" + page.innerText;
+  page.setAttribute("id", id);
+  page.setAttribute("href", "#" + id);
+});
+</script>
+
+  </body>
 
 </html>
