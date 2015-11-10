@@ -422,7 +422,7 @@
 <script>
 var pages = document.querySelectorAll("a.p");
 [].forEach.call(pages, function (page) {
-  var id = "p" + page.innerText;
+  var id = "p" + page.textContent;
   page.setAttribute("id", id);
   page.setAttribute("href", "#" + id);
 });
