@@ -90,6 +90,7 @@ hr {
 
 /* Numérotation d'origine (en haut de page)
    ========================================================================== */
+
 a.p {
   border-top: 1px solid #ddd;
   color: #ccc;
@@ -172,4 +173,5 @@ a.p {
   h1.titre { font-size: 3rem; }
   body { background-color: #fff; }
   #couverture h1 { padding-top: 0; }
+  a.p { display: none; }
 }
