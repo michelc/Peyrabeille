@@ -95,7 +95,9 @@ a.p {
   border-top: 1px solid #ddd;
   color: #ccc;
   display: block;
+  font-size: .75rem;
   left: 0;
+  letter-spacing: -1px;
   position: absolute;
   text-align: left;
   text-decoration: none;
