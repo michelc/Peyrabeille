@@ -176,4 +176,5 @@ a.p {
   body { background-color: #fff; }
   #couverture h1 { padding-top: 0; }
   a.p { display: none; }
+  .blankpage { height: 11rem; }
 }
