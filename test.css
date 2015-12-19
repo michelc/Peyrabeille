@@ -78,6 +78,9 @@ p {
   text-align: center;
   text-indent: 0;
 }
+#apropos p {
+  font-size: .9rem;
+}
 
 span {
   font-variant: small-caps;
@@ -85,6 +88,21 @@ span {
 
 hr {
   margin: 2rem 11rem;
+}
+
+#apropos ul {
+  margin: 0;
+  padding: 0;
+}
+#apropos ul li {
+  font-size: .9rem;
+  margin: .25rem 0 .25rem 1rem;
+  padding: 0;
+  text-align: justify;
+}
+
+.blankpage {
+  height: 1rem;
 }
 
 
