@@ -28,7 +28,7 @@ body {
   width: 100%;
 }
 
-#couverture {
+#front {
   text-align: center;
   padding-bottom: 1rem;
 }
@@ -45,7 +45,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
 }
-#couverture h1 {
+#front h1 {
   margin-bottom: 1.5rem;
   margin-top: 0;
   padding-top: 0;
@@ -73,12 +73,12 @@ p {
   text-align: justify;
   text-indent: 1rem;
 }
-#couverture p, p.star {
-  font-size: .85rem;
+#front p, p.star {
+  font-size: .8rem;
   text-align: center;
   text-indent: 0;
 }
-#apropos p {
+#about p {
   font-size: .9rem;
 }
 
@@ -90,18 +90,18 @@ hr {
   margin: 2rem 11rem;
 }
 
-#apropos ul {
+#about ul {
   margin: 0;
   padding: 0;
 }
-#apropos ul li {
+#about ul li {
   font-size: .9rem;
   margin: .25rem 0 .25rem 1rem;
   padding: 0;
   text-align: justify;
 }
 
-.blankpage {
+.blank {
   height: 1rem;
 }
 
@@ -160,7 +160,7 @@ a.p {
     max-width: 34rem;
     width: 99%
   }
-  #couverture p { font-size: 1rem; }
+  #front p { font-size: 1rem; }
 }
 
 
@@ -192,7 +192,7 @@ a.p {
   }
   h1.titre { font-size: 3rem; }
   body { background-color: #fff; }
-  #couverture h1 { padding-top: 0; }
+  #front h1 { padding-top: 0; }
   a.p { display: none; }
-  .blankpage { height: 15rem; }
+  .blank { height: 15rem; }
 }
