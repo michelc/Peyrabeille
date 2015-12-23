@@ -106,14 +106,14 @@ hr {
 }
 
 
-/* Numérotation d'origine (en haut de page)
+/* Numérotation pages d'origine (en haut de page)
    ========================================================================== */
 
 a.p {
   border-top: 1px solid #ddd;
   color: #ccc;
   display: block;
-  font-size: .75rem;
+  font-size: .7rem;
   left: 0;
   letter-spacing: -1px;
   position: absolute;
@@ -122,6 +122,18 @@ a.p {
   text-indent: .1rem;
   width: 100%;
 }
+a.p:hover { text-decoration: none; }
+
+
+/* Numérotation notes bas de page (en fin de chapitre plutôt)
+   ========================================================================== */
+
+a.n {
+  color:  #777;
+  text-decoration: none;
+}
+a.n:hover { text-decoration: none; }
+
 
 /* Smartphone (recents)
    ========================================================================== */
