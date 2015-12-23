@@ -51,8 +51,7 @@ h1 {
   padding-top: 0;
   page-break-before: avoid;
 }
-
-h1.titre {
+h1.title {
   font-size: 2.5rem;
   padding-top: 0;
 }
@@ -78,9 +77,6 @@ p {
   text-align: center;
   text-indent: 0;
 }
-#about p {
-  font-size: .9rem;
-}
 
 span {
   font-variant: small-caps;
@@ -90,19 +86,27 @@ hr {
   margin: 2rem 11rem;
 }
 
+.blank {
+  height: 1rem;
+}
+
+
+/* Page à-propos
+   ========================================================================== */
+
+#about {
+  font-size: .9rem;
+}
+
 #about ul {
   margin: 0;
   padding: 0;
 }
+
 #about ul li {
-  font-size: .9rem;
   margin: .25rem 0 .25rem 1rem;
   padding: 0;
   text-align: justify;
-}
-
-.blank {
-  height: 1rem;
 }
 
 
@@ -184,7 +188,7 @@ a.n:hover { text-decoration: none; }
  .container {
     padding: 2rem 4rem;
   }
-  h1.titre { font-size: 3rem; }
+  h1.title { font-size: 3rem; }
   a.p {
     left: 50%;
     margin-left: -17rem;
@@ -202,7 +206,7 @@ a.n:hover { text-decoration: none; }
  .container {
     padding: 2rem 4rem;
   }
-  h1.titre { font-size: 3rem; }
+  h1.title { font-size: 3rem; }
   body { background-color: #fff; }
   #front h1 { padding-top: 0; }
   a.p { display: none; }
