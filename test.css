@@ -61,6 +61,10 @@ h2 {
   margin: .67rem 0;
   text-align: center;
 }
+h2.top {
+  padding-top: 8rem;
+  page-break-before: always;
+}
 
 h3 {
   font-size: 1rem;
@@ -87,7 +91,7 @@ hr {
 }
 
 .blank {
-  height: 20rem;
+  height: 15rem;
   page-break-before: always;
 }
 
@@ -244,5 +248,5 @@ a.n:hover { text-decoration: none; }
   body { background-color: #fff; }
   #front h1 { padding-top: 0; }
   a.p { display: none; }
-  .blank { height: 15rem; }
+  .blank { height: 1rem; }
 }
