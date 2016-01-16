@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" moznomarginboxes>
 
   <head>
     <!-- Page Informations -->
@@ -28,6 +28,10 @@
       font-variant: small-caps;
       padding-top: 3rem;
     }
+    #url h2 {
+      display: none;
+      font-variant: normal;
+    }
     figure {
       background-color: #eee;
       font-size: .9rem;
@@ -41,7 +45,7 @@
       margin-top: -.25rem;
     }
     @media (min-width: 48rem) { figure { margin-left: -4rem; width: 34rem; } }
-    @media print { figure { margin-left: 0; width: 100%; } }
+    @media print { #url h2 { display: block; } figure { margin-left: 0; width: 100%; } }
     img {
       width: 100%;
     }
@@ -54,9 +58,7 @@
     </style>
   </head>
 
-  <body>
-
-  <div class="container">
+  <body><div class="container">
 
   <h1>L’Auberge Rouge<br>de Peyrebeille</h1>
 
@@ -218,8 +220,12 @@
 
   </div>
 
+  <div id="url">
+
+    <h2>http://peyrabeille.eu.org/</h2>
+
   </div>
 
-  </body>
+  </div></body>
 
 </html>
