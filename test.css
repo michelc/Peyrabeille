@@ -41,7 +41,7 @@ h1 {
   font-size: 1.5rem;
   margin: 3rem 0;
   padding-top: 5rem;
-  page-break-before: always;
+  page-break-before: right;
   text-align: center;
   text-transform: uppercase;
 }
@@ -62,8 +62,8 @@ h2 {
   text-align: center;
 }
 h2.top {
-  padding-top: 8rem;
-  page-break-before: always;
+  padding-top: 5.5rem;
+  page-break-before: right;
 }
 
 h3 {
@@ -90,7 +90,15 @@ hr {
   margin: 2rem 11rem;
 }
 
+/* page blanche existant dans l'édition originale */
+/* (rendue à la visualisation, mais pas à l'impression) */
 .blank {
+  height: 15rem;
+}
+
+/* page blanche au dos de la couverture et de l'a-propos */
+/* (espace à la visualisation, page vide à l'impression) */
+.verso {
   height: 15rem;
   page-break-before: always;
 }
@@ -115,7 +123,8 @@ hr {
 }
 
 
-/* Numérotation pages d'origine (en haut de page)
+/* Numérotation pages d'origine, en haut de page
+   (rendue à la visualisation, mais pas à l'impression)
    ========================================================================== */
 
 a.p {
@@ -247,6 +256,6 @@ a.n:hover { text-decoration: none; }
   h1.title { font-size: 3rem; }
   body { background-color: #fff; }
   #front h1 { padding-top: 0; }
-  a.p { display: none; }
-  .blank { height: 1rem; }
+  a.p, .blank { display: none; }
+  .verso { height: 1rem; }
 }
