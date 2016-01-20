@@ -8,8 +8,10 @@
 }
 
 html {
-  font: 95%/1.5 "Century", "Century Gothic", sans-serif;
+  font-family: Century, "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-size: 95%;
   font-weight: 400;
+  line-height: 1.5;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -87,6 +89,9 @@ span {
 }
 
 hr {
+  background-color: red;
+  border: 0;
+  height: 1px;
   margin: 2rem 11rem;
 }
 
@@ -187,7 +192,7 @@ a.n:hover { text-decoration: none; }
    ========================================================================== */
 
 @media (min-width: 23rem) {
-  html { font: 105%/1.5 "Century", "Century Gothic", sans-serif; }
+  html { font-size: 105%; }
  .container {
     padding: 1.5rem;
   }
@@ -229,7 +234,7 @@ a.n:hover { text-decoration: none; }
    ========================================================================== */
 
 @media (min-width: 48rem) {
-  html { font: 130%/1.5 "Century", "Century Gothic", sans-serif; }
+  html { font-size: 130%; }
  .container {
     padding: 2rem 4rem;
   }
@@ -248,7 +253,7 @@ a.n:hover { text-decoration: none; }
 
 @media print {
   @page { margin: 5.5rem 0; }
-  html { font: 130%/1.5 "Century", "Century Gothic", sans-serif; }
+  html { font-size: 130%; }
  .container {
     padding: 2rem 4rem;
   }
