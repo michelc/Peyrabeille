@@ -89,7 +89,7 @@ span {
 }
 
 hr {
-  background-color: red;
+  background-color: #111;
   border: 0;
   height: 1px;
   margin: 2rem 11rem;
@@ -126,6 +126,26 @@ hr {
   padding: 0;
   text-align: justify;
 }
+
+
+/* Menu de navigation
+   ========================================================================== */
+
+#nav {
+  position: fixed;
+  left: 50%;
+  margin-left: 17.1rem;
+  top: .5rem;
+}
+#nav a {
+  color: blue;
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+#nav a:hover { color: white; text-decoration: none; }
+#nav a:visited { color: blue; }
 
 
 /* Numérotation pages d'origine, en haut de page
@@ -261,6 +281,6 @@ a.n:hover { text-decoration: none; }
   h1.title { font-size: 3rem; }
   body { background-color: #fff; }
   #front h1 { padding-top: 0; }
-  a.p, .blank { display: none; }
+  #nav, a.p, .blank { display: none; }
   .verso { height: 1rem; }
 }
