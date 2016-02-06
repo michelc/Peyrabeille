@@ -271,8 +271,13 @@ a.n:hover { text-decoration: none; }
 /* Imprimante
    ========================================================================== */
 
+@page {
+  margin: 3cm 0; /* en cm pour IE */
+  orphans: 1;    /* c'est comme ça sur */
+  widows: 1;     /* l'édition originale */
+}
+
 @media print {
-  @page { margin: 5.5rem 0; }
   html { font-size: 130%; }
  .container {
     padding: 2rem 4rem;
