@@ -242,7 +242,7 @@ a.n:hover { text-decoration: none; }
   .container {
     padding: 1rem 1.5rem;
     max-width: 29rem;
-    width: 99%
+    width: 99%;
   }
   #toc li a { width: 95%; }
   #front p { font-size: 1rem; }
@@ -257,7 +257,7 @@ a.n:hover { text-decoration: none; }
   .container {
     padding: 2rem 4rem;
     max-width: 34rem;
-    width: 100%
+    width: 100%;
   }
   #nav { margin-left: 17.1rem; }
   h1.title { font-size: 3rem; }
@@ -281,7 +281,7 @@ a.n:hover { text-decoration: none; }
   .container {
     padding: 2rem 4rem;
     max-width: 34rem;
-    width: 100%
+    width: 100%;
     orphans: 1;    /* c'est comme ça sur */
     widows: 1;     /* l'édition originale */
   }
