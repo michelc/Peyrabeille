@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://peyrabeille.eu.org/sitemap.xml
+Sitemap: https://peyrabeille.eu.org/sitemap.xml
