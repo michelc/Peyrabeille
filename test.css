@@ -107,6 +107,11 @@ hr {
   page-break-before: always;
 }
 
+.chanson, .chanson p {
+  text-align: center;
+  line-height: 1rem;
+}
+
 
 /* Page à-propos
    ========================================================================== */
@@ -170,8 +175,9 @@ a.p:hover { text-decoration: none; }
 /* Numérotation notes bas de page (en fin de chapitre plutôt)
    ========================================================================== */
 
+p.n { font-size: .8rem; }
 a.n {
-  color:  #777;
+  color: #444;
   text-decoration: none;
 }
 a.n:hover { text-decoration: none; }
