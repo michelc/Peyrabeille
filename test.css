@@ -112,8 +112,9 @@ hr {
   line-height: 1rem;
 }
 
-p.droite {
+.droite p {
   text-align: right;
+  text-indent: 0;
 }
 
 
