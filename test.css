@@ -107,15 +107,19 @@ hr {
   page-break-before: always;
 }
 
+
+
+/* Chanson (chapitre 19)
+   ========================================================================== */
+
 .chanson, .chanson p {
   text-align: center;
   line-height: 1rem;
 }
 
-.droite p {
-  text-align: right;
-  text-indent: 0;
-}
+
+/* Extraits tribunal
+   ========================================================================== */
 
 blockquote {
   line-height: 1.25;
@@ -125,6 +129,16 @@ blockquote {
 
 blockquote p {
   margin: 0;
+}
+
+
+/* Signatures
+   ========================================================================== */
+
+.signature {
+  margin-right: 1rem !important;
+  text-align: right;
+  text-indent: 0;
 }
 
 
