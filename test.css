@@ -222,14 +222,25 @@ a.n:hover { text-decoration: none; }
   line-height: 1.25rem;
   list-style-type: none;
   margin: 0;
-  padding: 0;
   margin-left: 1rem;
+  padding: 0;
+}
+#toc li span {
+  background-image: url(./dots.gif);
+  background-size: 18px 14px;
+  background-position: right bottom;
+  background-repeat: repeat-x;
+  display: inline-block;
+  font-variant: normal;
+  margin-right: .25rem;
   text-indent: -.5rem;
+  width: 88%;
 }
 #toc li a {
-  display: inline-block;
+  background-color: white;
+  display: inline;
+  padding-right: .25rem;
   text-decoration: none;
-  width: 91%;
 }
 #toc li a:hover {
   text-decoration: underline;
