@@ -291,7 +291,7 @@ a.n:hover { text-decoration: none; }
     max-width: 29rem;
     width: 99%;
   }
-  #toc li a { width: 95%; }
+  #toc li span { width: 91%; }
   #front p { font-size: 1rem; }
 }
 
@@ -332,7 +332,7 @@ a.n:hover { text-decoration: none; }
     orphans: 1;    /* c'est comme ça sur */
     widows: 1;     /* l'édition originale */
   }
-  #toc li a { width: 23rem; }
+  #toc li span { width: 23rem; }
   h1.title { font-size: 3rem; }
   body { background-color: #fff; }
   #front h1 { padding-top: 0; }
