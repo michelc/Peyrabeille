@@ -87,6 +87,12 @@ span {
   font-variant: small-caps;
 }
 
+strong {
+  color: #000;
+  font-size: 120%;
+  font-weight: normal;
+}
+
 hr {
   background-color: #111;
   border: 0;
@@ -106,7 +112,6 @@ hr {
   height: 15rem;
   page-break-before: always;
 }
-
 
 
 /* Chanson (chapitre 19)
