@@ -93,6 +93,12 @@ strong {
   font-weight: normal;
 }
 
+span strong {
+  color: #222;
+  font-size: 100%;
+  font-weight: bold;
+}
+
 hr {
   background-color: #111;
   border: 0;
@@ -159,6 +165,54 @@ blockquote p {
 }
 
 
+/* Actes de décès (chapitre 48, 49 et 50)
+   ========================================================================== */
+
+.acte {
+  border-top: 1px solid #111;
+  margin-top: .5rem;
+  padding: 0;
+}
+/* Pour que le border-top du 1° certificat soit visible */
+a + .acte {
+  margin-top: 2.1rem;
+  page-break-before: always;
+}
+
+.acte h2 {
+  font-size: .85rem;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+.acte h2:first-of-type {
+  font-size: .85rem;
+  font-size: 1rem;
+}
+
+.acte hr {
+  margin: .8rem 12rem;
+}
+.acte hr:first-of-type {
+  margin: .8rem 11rem;
+}
+
+.acte p {
+  line-height: 1;
+}
+
+/* Copie certifiée */
+.copie p {
+  margin: 0;
+}
+/* Mention "Pour copie conforme" */
+.copie p:first-of-type {
+  font-size: smaller;
+  margin-left: 45%;
+  margin-top: -1rem !important;
+}
+
+
 /* Signatures
    ========================================================================== */
 
@@ -166,6 +220,14 @@ blockquote p {
   margin-right: 1rem !important;
   text-align: right;
   text-indent: 0;
+}
+
+.acte .signature {
+  margin-top: .5rem;
+}
+
+.copie .signature {
+  margin-top: -.5rem;
 }
 
 
@@ -320,6 +382,10 @@ a.n:hover { text-decoration: none; }
   }
   #toc li span { width: 91%; }
   #front p { font-size: 1rem; }
+  .complainte p {
+    margin-left: 15%;
+    text-indent: 1rem;
+  }
 }
 
 
