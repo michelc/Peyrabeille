@@ -43,7 +43,7 @@ h1 {
   font-size: 1.5rem;
   margin: 3rem 0;
   padding-top: 5rem;
-  page-break-before: right;
+  page-break-before: always;
   text-align: center;
   text-transform: uppercase;
 }
@@ -64,7 +64,7 @@ h2 {
 }
 h2.top {
   padding-top: 7.6rem;
-  page-break-before: right;
+  page-break-before: always;
 }
 
 h3 {

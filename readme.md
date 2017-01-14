@@ -31,20 +31,14 @@ définies sous la forme : `<div class="blank"></div>` :
 vides.
 * A l'impression, ces pages blanches ne sont pas rendues.
 
-Pour que les nouveaux chapitres commencent sur une page de droite, les titres
-`h1` ou `h2.top` en début de chapitre ont une propriété CSS `page-break-before:
-right`. Malheureusement, cette propriété n'est pas prise en compte par tous les
-navigateurs, la plupart se contentant d'effectuer un saut de page, sans insérer
-une page vide pour démarrer sur une page de droite.
+A l'impression, les chapitres ne commençent donc pas toujours sur une "belle"
+page (page de droite, impaire), mais ce n'était pas non plus le cas de tous les
+chapitres dans l'édition originale du livre.
 
-Par conséquent, pour avoir au minimum une page blanche au dos de la couverture
-(et au dos de la page à propos qui n'existe pas dans l'édition d'origine), une
-balise `<div class="verso"></div>` a été utilisée.
+Pour avoir au minimum une page blanche au dos de la couverture (et au dos de la
+page à propos qui n'existe pas dans l'édition d'origine), une balise
+`<div class="verso"></div>` a été utilisée.
 
 A l'écran, cette classe est matérialisée par une dizaine de lignes vides. A
 l'impression, elle est rendue sous forme d'une page vide grâce à la propriété
 CSS `page-break-before: always`.
-
-A l'avenir, cette classe "verso" pourrait aussi être utilisée pour forcer
-manuellement d'autres pages vides là où cela s'avèrera nécessaire dans le cas
-d'une impression au format A4 portrait.
