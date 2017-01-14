@@ -334,13 +334,6 @@ a.n:hover { text-decoration: none; }
 #toc li a:hover {
   text-decoration: underline;
 }
-#toc li.off a {
-  color: #888;
-  font-style: italic;
-}
-#toc li.off a:hover {
-  text-decoration: none;
-}
 
 
 /* Smartphone (recents)
