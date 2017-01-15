@@ -123,22 +123,30 @@ hr {
 /* Chanson (chapitre 19)
    ========================================================================== */
 
-.chanson, .chanson p {
+.chanson blockquote {
+  line-height: 1.25;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  line-height: 1rem;
+}
+
+.chanson blockquote p {
+  margin-bottom: 1rem;
+  text-align: center;
+  text-indent: 0;
 }
 
 
-/* Extraits tribunal
+/* Citations diverses
    ========================================================================== */
 
-blockquote {
+.citation blockquote {
   line-height: 1.25;
   margin-left: 0;
   margin-right: 0;
 }
 
-blockquote p {
+.citation blockquote p {
   margin: 0;
 }
 
@@ -146,22 +154,28 @@ blockquote p {
 /* Complainte (chapitre 46)
    ========================================================================== */
 
-.complainte hr {
-  margin: 2rem 12rem;
+.complainte blockquote {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-.complainte p {
-  line-height: 1rem;
-  margin-left: 0;
+.complainte blockquote p {
   margin-bottom: 1rem;
+  text-align: left;
   text-indent: .5rem;
 }
 
 /* Mention "Air connu" est centrée */
-.complainte p:first-of-type {
+.complainte blockquote p:first-of-type {
   margin-left: 0;
   text-align: center;
   text-indent: 0;
+}
+
+.complainte blockquote hr {
+  margin: 2rem 12rem;
 }
 
 
@@ -179,27 +193,35 @@ a + .acte {
   page-break-before: always;
 }
 
-.acte h2 {
+.acte blockquote {
+  line-height: 1.25;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.acte blockquote h2 {
   font-size: .85rem;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
 }
-.acte h2:first-of-type {
+.acte blockquote h2:first-of-type {
   font-size: .85rem;
   font-size: 1rem;
 }
 
-.acte hr {
+.acte blockquote hr {
   margin: .8rem 12rem;
 }
-.acte hr:first-of-type {
+.acte blockquote hr:first-of-type {
   margin: .8rem 11rem;
 }
 
-.acte p {
+.acte blockquote p {
   line-height: 1;
+  margin: 0;
 }
+
 
 /* Copie certifiée */
 .copie p {
@@ -208,8 +230,7 @@ a + .acte {
 /* Mention "Pour copie conforme" */
 .copie p:first-of-type {
   font-size: smaller;
-  margin-left: 45%;
-  margin-top: -1rem !important;
+  margin: .5rem 0 .3rem 45%;
 }
 
 
@@ -227,7 +248,7 @@ a + .acte {
 }
 
 .copie .signature {
-  margin-top: -.5rem;
+  margin-top: -.25rem;
 }
 
 
@@ -375,7 +396,7 @@ a.n:hover { text-decoration: none; }
   }
   #toc li span { width: 91%; }
   #front p { font-size: 1rem; }
-  .complainte p {
+  .complainte blockquote p {
     margin-left: 15%;
     text-indent: 1rem;
   }
