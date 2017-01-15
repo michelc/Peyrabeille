@@ -120,13 +120,24 @@ hr {
 }
 
 
+/* Citations diverses (extraits du procès, témoignages...)
+   ========================================================================== */
+
+blockquote {
+  line-height: 1.25;
+  margin: 0;
+  padding: 0;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+
 /* Chanson (chapitre 19)
    ========================================================================== */
 
 .chanson blockquote {
-  line-height: 1.25;
-  margin: 0;
-  padding: 0;
   text-align: center;
 }
 
@@ -137,27 +148,11 @@ hr {
 }
 
 
-/* Citations diverses
-   ========================================================================== */
-
-.citation blockquote {
-  line-height: 1.25;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.citation blockquote p {
-  margin: 0;
-}
-
-
 /* Complainte (chapitre 46)
    ========================================================================== */
 
 .complainte blockquote {
   line-height: 1;
-  margin: 0;
-  padding: 0;
   text-align: center;
 }
 
@@ -194,9 +189,7 @@ a + .acte {
 }
 
 .acte blockquote {
-  line-height: 1.25;
-  margin-left: 0;
-  margin-right: 0;
+  line-height: 1;
 }
 
 .acte blockquote h2 {
@@ -215,11 +208,6 @@ a + .acte {
 }
 .acte blockquote hr:first-of-type {
   margin: .8rem 11rem;
-}
-
-.acte blockquote p {
-  line-height: 1;
-  margin: 0;
 }
 
 
