@@ -314,7 +314,9 @@ a.n:hover { text-decoration: none; }
 /* Table des matières
    ========================================================================== */
 
-#toc ol {
+#toc h1 { padding-top: 2rem; }
+
+#toc ol, #toc ul {
   color: #888;
   font-size: .9rem;
   line-height: 1.25rem;
@@ -323,7 +325,7 @@ a.n:hover { text-decoration: none; }
   margin-left: 1rem;
   padding: 0;
 }
-#toc li span {
+#toc ol li span {
   background-image: url(./dots.gif);
   background-size: 18px 14px;
   background-position: right bottom;
@@ -342,6 +344,35 @@ a.n:hover { text-decoration: none; }
 }
 #toc li a:hover {
   text-decoration: underline;
+}
+
+#toc ul {
+  color: #111;
+  text-indent: -.5rem;
+}
+
+/* Gravures
+   ========================================================================== */
+
+.gravure {
+  margin: 2rem 0;
+}
+
+.gravure h2 {
+  page-break-before: always;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.gravure img {
+  max-width: 100%;
+  margin: .5rem 0;
+}
+
+.gravure ol {
+  font-size: .75rem;
+  line-height: .85rem;
+  margin: 0;
 }
 
 
